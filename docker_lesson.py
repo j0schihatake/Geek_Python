@@ -1,4 +1,5 @@
-from src.lessons.lesson_1.lesson_1 import *
+import src.lessons.lesson_1.lesson_1 as ls_1
+import src.lessons.lesson_2.lesson_2 as ls_2
 # from src.lesson_1 import decker_help
 
 # https://andreyex.ru/linux/komanda-zapuska-docker-s-primerami/
@@ -6,13 +7,14 @@ from src.lessons.lesson_1.lesson_1 import *
 # Docker, сборка образа
 # docker build -t hello-world .
 
-# Docker, просмотр образов
+# Docker, просмотр образов:
 
 # docker images
 # docker ps -a
 # docker ps -a -q (айдишники)
 
-# Docker, запуск
+# Docker, запуск:
+# docker run -t -i --rm --name test_img hello-world                             Запуск в интерактивном режиме с консолью
 # docker run --rm --name test_img hello-world
 # docker run --rm --name test_img -p 8080:8080 hello-world
 # docker run --rm --name test_img -p 8080:8080 -e TZ=Europe/Moscow hello-world
@@ -38,4 +40,6 @@ from src.lessons.lesson_1.lesson_1 import *
 # volume
 # docker volume ls
 
-print(docker_help())
+def start():
+    print(ls_1.docker_help())
+    print(ls_2.docker_help())
