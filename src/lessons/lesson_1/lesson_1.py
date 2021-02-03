@@ -46,7 +46,7 @@ def lesson_1_2():
 # Задача 3:
 def lesson_1_3():
   inp = int(input("Введите которое требуется рассчитать по формуле n + nn + nnn:"))
-  result = inp - inp*inp - inp*inp*inp
+  result = inp + inp*inp + inp*inp*inp
   return result
 
 # Задача 4:
