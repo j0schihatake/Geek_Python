@@ -1,4 +1,5 @@
-from src.lessons.lesson_1.lesson_1 import *
+from src.lessons.lesson_3.lesson_3 import *
+#from src.lessons.lesson_1.lesson_1 import *
 # from src.lesson_1 import decker_help
 
 # https://andreyex.ru/linux/komanda-zapuska-docker-s-primerami/
@@ -19,6 +20,8 @@ from src.lessons.lesson_1.lesson_1 import *
 # docker run --rm --name test_img -p 8080:8080 -e TZ=Europe/Moscow -v hello:/usr/src/app/src/ hello-world
 # docker run --rm -d --name test_img -p 8080:8080 -e TZ=Europe/Moscow -v hello:/usr/src/app/src/ hello-world
 # docker run --name test_img hello-world
+# docker run -it --rm --name test_img hello-world
+
 
 # Docker, удаление образа
 # docker rm "чтото из параметров"
